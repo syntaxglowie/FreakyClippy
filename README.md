@@ -8,4 +8,4 @@ You can download the installer from the latest release [here](https://github.com
 Note: The whole folder "animations" needs to be in the .exe file's directory.
 
 ## License
-Code and software is provided as is without and warranty. The source code and software is provided and published under the [CC BY-NC-SA 4.0 License](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+Code and software is provided as is and without any warranty. The source code and software is provided and published under the [CC BY-NC-SA 4.0 License](https://creativecommons.org/licenses/by-nc-sa/4.0/).
