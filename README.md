@@ -4,7 +4,7 @@
   <img src="https://github.com/syntaxglowie/FreakyClippy/blob/master/image.png?raw=true" />
 </p>
 
-You missed clippy so badly, right? Well, now you can have him on your desktop and provide you with motivational quotes and uplifting messages. It's 100% free, too!
+You missed clippy so badly, right? Well, now you can have him on your desktop and provide you with over 400 motivational quotes, deep philosophical thoughts and other light-hearted, uplifting messages. It's 100% free, too!
 By default it talks every 1.5 to 10 minutes. You can change that by right clicking on Clippy and choosing "Settings".
 
 ## Usage
