@@ -1,6 +1,8 @@
 ## Clippy: your desktop buddy!
 
-![clippy](https://github.com/syntaxglowie/FreakyClippy/blob/master/image.png?raw=true)
+<p align="center">
+  <img src="[http://some_place.com/image.png](https://github.com/syntaxglowie/FreakyClippy/blob/master/image.png?raw=true)" />
+</p>
 
 You missed clippy so badly, right? Well, now you can have him on your desktop and provide you with motivational quotes and uplifting messages. It's 100% free, too!
 By default it talks every 1.5 to 10 minutes. You can change that by right clicking on Clippy and choosing "Settings".
