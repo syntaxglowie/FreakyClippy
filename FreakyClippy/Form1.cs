@@ -19,14 +19,19 @@ namespace FreakyClippy
         private int minMsBetweenLines = Properties.Settings.Default.minSeconds * 1000;
         private int maxMsBetweenLines = Properties.Settings.Default.maxSeconds * 1000;
         private int msBetweenFrames = Properties.Settings.Default.timeBetweenFrames;
+        private int speechBubbleSizeX = Properties.Settings.Default.speechBubbleX;
+        private int speechBubbleSizeY = Properties.Settings.Default.speechBubbleY;
+        private int minSpeechBubbleFontSize = Properties.Settings.Default.minFontSize;
+
 
         public Form1()
         {
+            this.AutoScaleMode = AutoScaleMode.Dpi;
             InitializeComponent();
             // Create panel (bubble)
             speechBubble = new Panel
             {
-                Size = new Size(200, 120),
+                Size = new Size(speechBubbleSizeX, speechBubbleSizeY),
                 BackColor = Color.LightYellow,
                 BorderStyle = BorderStyle.FixedSingle,
                 Visible = false
@@ -59,7 +64,7 @@ namespace FreakyClippy
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error loading animation directories: " + ex.Message);
+                MessageBox.Show("Error loading animation directories: " + ex.Message, "CLIPPY MADE A F*CKY-WUCKY", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return new List<string>();
             }
         }
@@ -113,7 +118,7 @@ namespace FreakyClippy
                     }
                     catch (Exception ex)
                     {
-                        MessageBox.Show("Error playing animation: " + ex.Message);
+                        MessageBox.Show("Error playing animation: " + ex.Message, "CLIPPY MADE A F*CKY-WUCKY", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         clippyPictureBox.Image = Image.FromFile(Path.Combine(appDirectory, "animations", "default.png"));
                         animationTimer.Stop();  // Stop the timer in case of an error.
                         animationTimer.Dispose();
@@ -126,7 +131,7 @@ namespace FreakyClippy
         private void AdjustFontSizeToFitPanel(string text, Panel panel, Label label)
         {
             int fontSize = 20;
-            int minFontSize = 10;
+            int minFontSize = minSpeechBubbleFontSize;
             Font font = new Font("Arial", fontSize);
             SizeF textSize = GetTextSize(text, font);
 
@@ -161,19 +166,18 @@ namespace FreakyClippy
                 }
                 else
                 {
-                    MessageBox.Show("Error: lines.txt not found!");
+                    MessageBox.Show("Error: lines.txt not found!", "CLIPPY MADE A F*CKY-WUCKY", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error loading lines: " + ex.Message);
+                MessageBox.Show("Error loading lines: " + ex.Message, "CLIPPY MADE A F*CKY-WUCKY", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
         private void ShowSpeechBubble(string text, int duration)
         {
             speechText.Text = text;
-
 
             AdjustFontSizeToFitPanel(text, speechBubble, speechText);
 
@@ -269,6 +273,9 @@ namespace FreakyClippy
         {
             settings settingsForm = new settings();
             settingsForm.ShowDialog();
+
+            Application.Restart();
+            Environment.Exit(0);
         }
     }
 }

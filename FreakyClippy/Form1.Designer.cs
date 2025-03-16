@@ -56,19 +56,19 @@
             // 
             ContextMenuStripSettings.Items.AddRange(new ToolStripItem[] { settingsToolStripMenuItem, closeToolStripMenuItem });
             ContextMenuStripSettings.Name = "contextMenuStripSettings";
-            ContextMenuStripSettings.Size = new Size(181, 70);
+            ContextMenuStripSettings.Size = new Size(126, 48);
             // 
             // settingsToolStripMenuItem
             // 
             settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
-            settingsToolStripMenuItem.Size = new Size(180, 22);
+            settingsToolStripMenuItem.Size = new Size(125, 22);
             settingsToolStripMenuItem.Text = "Settings...";
             settingsToolStripMenuItem.Click += settingsToolStripMenuItem_Click;
             // 
             // closeToolStripMenuItem
             // 
             closeToolStripMenuItem.Name = "closeToolStripMenuItem";
-            closeToolStripMenuItem.Size = new Size(180, 22);
+            closeToolStripMenuItem.Size = new Size(125, 22);
             closeToolStripMenuItem.Text = "Exit";
             closeToolStripMenuItem.Click += closeToolStripMenuItem_Click;
             // 
@@ -87,7 +87,10 @@
             ClientSize = new Size(764, 431);
             Controls.Add(clippyPictureBox);
             FormBorderStyle = FormBorderStyle.None;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Form1";
+            ShowIcon = false;
+            ShowInTaskbar = false;
             Text = "Form1";
             TopMost = true;
             TransparencyKey = SystemColors.Control;

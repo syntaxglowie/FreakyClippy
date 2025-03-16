@@ -39,13 +39,22 @@
             linkLabel1 = new LinkLabel();
             button1 = new Button();
             button2 = new Button();
-            label5 = new Label();
             richTextBox1 = new RichTextBox();
             pictureBox1 = new PictureBox();
+            numericUpDown4 = new NumericUpDown();
+            label6 = new Label();
+            label7 = new Label();
+            numericUpDown5 = new NumericUpDown();
+            label8 = new Label();
+            label9 = new Label();
+            numericUpDown6 = new NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)numericUpDown4).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)numericUpDown5).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)numericUpDown6).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -129,7 +138,7 @@
             // 
             // button1
             // 
-            button1.Location = new Point(12, 146);
+            button1.Location = new Point(12, 156);
             button1.Name = "button1";
             button1.Size = new Size(75, 23);
             button1.TabIndex = 8;
@@ -139,28 +148,19 @@
             // 
             // button2
             // 
-            button2.Location = new Point(93, 146);
+            button2.Location = new Point(93, 156);
             button2.Name = "button2";
-            button2.Size = new Size(134, 23);
+            button2.Size = new Size(111, 23);
             button2.TabIndex = 9;
             button2.Text = "Load default";
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
             // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Location = new Point(12, 182);
-            label5.Name = "label5";
-            label5.Size = new Size(218, 45);
-            label5.TabIndex = 10;
-            label5.Text = "Published under\r\nAttribution-NonCommercial-ShareAlike\r\n4.0 International License";
-            // 
             // richTextBox1
             // 
-            richTextBox1.Location = new Point(14, 230);
+            richTextBox1.Location = new Point(14, 185);
             richTextBox1.Name = "richTextBox1";
-            richTextBox1.Size = new Size(361, 135);
+            richTextBox1.Size = new Size(441, 177);
             richTextBox1.TabIndex = 11;
             richTextBox1.Text = resources.GetString("richTextBox1.Text");
             // 
@@ -168,20 +168,94 @@
             // 
             pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
             pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox1.Location = new Point(289, 368);
+            pictureBox1.Location = new Point(369, 366);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(86, 17);
             pictureBox1.TabIndex = 12;
             pictureBox1.TabStop = false;
             // 
+            // numericUpDown4
+            // 
+            numericUpDown4.Location = new Point(312, 62);
+            numericUpDown4.Maximum = new decimal(new int[] { 500, 0, 0, 0 });
+            numericUpDown4.Minimum = new decimal(new int[] { 80, 0, 0, 0 });
+            numericUpDown4.Name = "numericUpDown4";
+            numericUpDown4.Size = new Size(44, 23);
+            numericUpDown4.TabIndex = 17;
+            numericUpDown4.Value = new decimal(new int[] { 100, 0, 0, 0 });
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new Point(292, 66);
+            label6.Name = "label6";
+            label6.Size = new Size(14, 15);
+            label6.TabIndex = 16;
+            label6.Text = "Y";
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Location = new Point(292, 35);
+            label7.Name = "label7";
+            label7.Size = new Size(14, 15);
+            label7.TabIndex = 15;
+            label7.Text = "X";
+            // 
+            // numericUpDown5
+            // 
+            numericUpDown5.Location = new Point(312, 33);
+            numericUpDown5.Maximum = new decimal(new int[] { 500, 0, 0, 0 });
+            numericUpDown5.Minimum = new decimal(new int[] { 100, 0, 0, 0 });
+            numericUpDown5.Name = "numericUpDown5";
+            numericUpDown5.Size = new Size(44, 23);
+            numericUpDown5.TabIndex = 14;
+            numericUpDown5.Value = new decimal(new int[] { 240, 0, 0, 0 });
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label8.Location = new Point(292, 9);
+            label8.Name = "label8";
+            label8.Size = new Size(113, 15);
+            label8.TabIndex = 13;
+            label8.Text = "Speech bubble size";
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label9.Location = new Point(292, 96);
+            label9.Name = "label9";
+            label9.Size = new Size(82, 15);
+            label9.TabIndex = 18;
+            label9.Text = "Min. font size";
+            // 
+            // numericUpDown6
+            // 
+            numericUpDown6.Location = new Point(292, 114);
+            numericUpDown6.Maximum = new decimal(new int[] { 20, 0, 0, 0 });
+            numericUpDown6.Minimum = new decimal(new int[] { 4, 0, 0, 0 });
+            numericUpDown6.Name = "numericUpDown6";
+            numericUpDown6.Size = new Size(44, 23);
+            numericUpDown6.TabIndex = 20;
+            numericUpDown6.Value = new decimal(new int[] { 10, 0, 0, 0 });
+            // 
             // settings
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(387, 392);
+            ClientSize = new Size(467, 392);
+            Controls.Add(numericUpDown6);
+            Controls.Add(label9);
+            Controls.Add(numericUpDown4);
+            Controls.Add(label6);
+            Controls.Add(label7);
+            Controls.Add(numericUpDown5);
+            Controls.Add(label8);
             Controls.Add(pictureBox1);
             Controls.Add(richTextBox1);
-            Controls.Add(label5);
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(linkLabel1);
@@ -201,6 +275,9 @@
             ((System.ComponentModel.ISupportInitialize)numericUpDown2).EndInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)numericUpDown4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)numericUpDown5).EndInit();
+            ((System.ComponentModel.ISupportInitialize)numericUpDown6).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -217,8 +294,14 @@
         private LinkLabel linkLabel1;
         private Button button1;
         private Button button2;
-        private Label label5;
         private RichTextBox richTextBox1;
         private PictureBox pictureBox1;
+        private NumericUpDown numericUpDown4;
+        private Label label6;
+        private Label label7;
+        private NumericUpDown numericUpDown5;
+        private Label label8;
+        private Label label9;
+        private NumericUpDown numericUpDown6;
     }
 }

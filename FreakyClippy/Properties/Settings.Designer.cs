@@ -58,5 +58,41 @@ namespace FreakyClippy.Properties {
                 this["timeBetweenFrames"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("240")]
+        public int speechBubbleX {
+            get {
+                return ((int)(this["speechBubbleX"]));
+            }
+            set {
+                this["speechBubbleX"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("100")]
+        public int speechBubbleY {
+            get {
+                return ((int)(this["speechBubbleY"]));
+            }
+            set {
+                this["speechBubbleY"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("10")]
+        public int minFontSize {
+            get {
+                return ((int)(this["minFontSize"]));
+            }
+            set {
+                this["minFontSize"] = value;
+            }
+        }
     }
 }
