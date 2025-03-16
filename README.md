@@ -1,7 +1,7 @@
 ## Clippy: your desktop buddy!
 
 <p align="center">
-  <img src="[http://some_place.com/image.png](https://github.com/syntaxglowie/FreakyClippy/blob/master/image.png?raw=true)" />
+  <img src="https://github.com/syntaxglowie/FreakyClippy/blob/master/image.png?raw=true" />
 </p>
 
 You missed clippy so badly, right? Well, now you can have him on your desktop and provide you with motivational quotes and uplifting messages. It's 100% free, too!
